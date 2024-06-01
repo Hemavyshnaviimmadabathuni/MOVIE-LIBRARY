@@ -9,7 +9,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "MovieSearchWebApplication/routes/index.js"
+      "dest": "/"
     }
   ]
 }
