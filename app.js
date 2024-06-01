@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const expressLayouts = require('express-ejs-layouts');
 const mongoose = require('mongoose');
@@ -19,7 +20,7 @@ const db = require('./config/keys').MongoURI;
 // Connect to MongoDB
 mongoose
   .connect(
-    db,
+    process.env.MONGO_URL,
     { useNewUrlParser: true ,useUnifiedTopology: true}
   )
   .then(() => console.log('MongoDB Connected'))
@@ -60,6 +61,6 @@ app.use(function(req, res, next) {
 app.use('/', require('./routes/index.js'));
 app.use('/users', require('./routes/users.js'));
 
-const PORT = process.env.PORT || 3002;
+const PORT = process.env.PORT || 3003;
 
 app.listen(PORT, console.log(`Server running on  ${PORT}`));
