@@ -2,14 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "movieswebapplication/routes/index.js",
+      "src": "MovieSearchWebApplication/routes/index.js",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "movieswebapplication/routes/index.js"
+      "dest": "MovieSearchWebApplication/routes/index.js"
     }
   ]
 }
