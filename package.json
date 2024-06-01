@@ -2,16 +2,15 @@
   "name": "movielibrarywebapplication",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "movieswebapplication/routes/index.js",
   "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app.js"
+    "start": "node movieswebapplication/routes/index.js",
+    "dev": "nodemon movieswebapplication/routes/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "18": "^0.0.0",
     "bcrypt": "^5.0.1",
     "bcryptjs": "^2.4.3",
     "connect-flash": "^0.1.1",
