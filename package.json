@@ -2,10 +2,10 @@
   "name": "movielibrarywebapplication",
   "version": "1.0.0",
   "description": "",
-  "main": "movieswebapplication/routes/index.js",
+  "main": "MovieSearchWebApplication/routes/index.js",
   "scripts": {
-    "start": "node movieswebapplication/routes/index.js",
-    "dev": "nodemon movieswebapplication/routes/index.js"
+    "start": "node MovieSearchWebApplication/routes/index.js",
+    "dev": "nodemon MovieSearchWebApplication/routes/index.js"
   },
   "keywords": [],
   "author": "",
